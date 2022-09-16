@@ -1,0 +1,98 @@
+
+body {
+    background-color:rgb(46, 46, 46);
+    font-family: Consolas;
+    position: relative;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: antiquewhite;
+    width: 30px;
+    padding-top: 5px;
+    z-index: 200;
+    transition: width, 0.2s;
+}
+
+.sidebar:hover {
+    width: 72px;
+}
+
+.sidebar-content {
+    font-size: 10px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.project-grid {
+    display: grid;
+    column-gap: 8px;
+    row-gap: 16px;
+    padding: 20px;
+}
+
+.project-card {
+    padding: 15px;
+    background-color: rgb(250, 200, 120);
+    color: rgb(100, 50, 0);
+    border-color: rgb(270, 220, 140);
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    margin-left: 100px;
+    transition: opacity 0.15s;
+    transition: shadow 0.15s;
+    transition: height 0.2s;
+    transition: width 0.2s;
+    font-size: large;
+    vertical-align: top;
+    transition: margin-top 0.5s cubic-bezier(0.23, 1, 0.32, 1), 
+                height 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.project-card:hover {
+    opacity: 0.9;
+    margin-top: 5px;
+    height: 350px;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.project-card:active {
+    opacity: 0.85;
+    margin-top: 10px;
+}
+
+.project-thumb {
+    height: 95%;
+    width: 300px;
+    object-fit: cover;
+    vertical-align: top;
+    margin-right: 15px;
+    border-radius: 20px;
+   
+}
+
+.project-info {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.title {
+    font-size: 40px;
+    color:antiquewhite;
+    text-align: center;
+    position: relative;
+    animation-name: ani-title;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
