@@ -34,12 +34,12 @@ body {
 
 .project-grid {
     display: grid;
-    column-gap: 8px;
-    row-gap: 16px;
-    padding: 20px;
+    margin-inline: 100px;
 }
 
 .project-card {
+    display: inline-grid;
+    position: relative;
     padding: 15px;
     background-color: rgb(250, 200, 120);
     color: rgb(100, 50, 0);
@@ -48,43 +48,42 @@ body {
     height: 300px;
     width: 300px;
     margin-left: 100px;
+    margin-top: 100px;
     transition: opacity 0.15s;
     transition: shadow 0.15s;
     transition: height 0.2s;
     transition: width 0.2s;
+
     font-size: large;
     vertical-align: top;
-    transition: margin-top 0.5s cubic-bezier(0.23, 1, 0.32, 1), 
+    top: 0;
+    transition: top 0.5s cubic-bezier(0.23, 1, 0.32, 1), 
                 height 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .project-card:hover {
     opacity: 0.9;
-    margin-top: 5px;
-    height: 350px;
-
+    top: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 }
 .project-card:active {
     opacity: 0.85;
-    margin-top: 10px;
+    top: 20px;
 }
 
 .project-thumb {
-    height: 95%;
+    height: 92%;
     width: 300px;
     object-fit: cover;
     vertical-align: top;
     margin-right: 15px;
-    border-radius: 20px;
+    border-radius: 10px;
    
 }
 
 .project-info {
-    margin-top: 0;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    margin-bottom: 12px;
+    margin-top: -55px;
+    font-size: 12px;
+    line-height: 20px; 
 }
 
 .title {
