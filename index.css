@@ -5,31 +5,62 @@ body {
     position: relative;
 }
 
+a:link { 
+    color:rgb(46, 46, 46);
+    text-decoration: none; 
+}
+
+a:visited {
+    color:rgb(46, 46, 46);
+}
+
+
 .sidebar {
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
     background-color: antiquewhite;
-    width: 30px;
+    width: 68px;
     padding-top: 5px;
     z-index: 200;
     transition: width, 0.2s;
 }
 
 .sidebar:hover {
-    width: 72px;
+    width: 120px;  
+    cursor: initial;
+}
+
+.sidebar:hover > .sidebar-content {
+    font-size: 20px; 
+    opacity: 100%;
+    
+}
+
+.sidebar:hover > .sidebar-content > .sidebarimg {
+    height: 64px;
+}
+
+.sidebarimg {
+    transition: height 0.2s;
+    height: 32px;
 }
 
 .sidebar-content {
+    opacity: 50%;
     font-size: 10px;
-    height: 125px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: font-size 0.2s,
+                opacity 0.2s;
 }
+
+
 
 
 .project-grid {
@@ -45,7 +76,7 @@ body {
     color: rgb(100, 50, 0);
     border-color: rgb(270, 220, 140);
     border-radius: 10px;
-    height: 28vh;
+    height: 29vh;
     width: 12vw;
     margin-left: 100px;
     margin-top: 100px;
@@ -60,6 +91,18 @@ body {
     transition: top 0.5s cubic-bezier(0.23, 1, 0.32, 1), 
                 height 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
+
+.noclick:active {
+    animation: onclick 0.15s;
+}
+
+@keyframes onclick {
+    0% {transform: translateX(2%);}
+    25% {transform: translateX(-2%);}
+    50% {transform: translateX(2%);}
+    75% {transform: translateX(-2%);}
+}
+
 .project-card:hover {
     opacity: 0.9;
     top: 10px;

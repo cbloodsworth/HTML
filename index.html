@@ -12,9 +12,26 @@
 
   <body>
     <nav class="sidebar">
-      <div class="sidebar-content">test</div>
-      <div class="sidebar-content">test</div>
-      <div class="sidebar-content">test</div>
+      <a
+        class="sidebar-content"
+        href="https://github.com/cbloodsworth"
+        target="_blank"
+      >
+        Github
+        <img class="sidebarimg" src="images/github.png" alt="github" />
+      </a>
+      <a class="sidebar-content" href="resume.html" target="_blank">
+        Resume
+        <img class="sidebarimg" src="images/resume.png" alt="resume" />
+      </a>
+      <a
+        class="sidebar-content"
+        href="https://www.linkedin.com/in/chris-bloodsworth/"
+        target="_blank"
+      >
+        LinkedIn
+        <img class="sidebarimg" src="images/linkedin.png" alt="linkedin" />
+      </a>
     </nav>
 
     <div class="title">
@@ -23,7 +40,14 @@
 
     <div class="project-grid">
       <div class="project-card" style="grid-row: 1">
-        <div class="project-title">Chess</div>
+        <div class="project-title">
+          <img
+            src="images/github.png"
+            alt="github"
+            style="height: 16px; width: 16px"
+          />
+          Chess
+        </div>
         <div class="project-thumb">
           <a href="https://github.com/cbloodsworth/Chess" target="_blank">
             <img class="project-thumb" src="images/chess.png" alt="chess" />
@@ -31,36 +55,51 @@
         </div>
         <div class="project-info">
           <p>
-            Personal project as an exercise. Made in C++ and uses SFML for
-            visuals.
+            The original two-player game. Made in C++ and uses SFML for visuals.
+          </p>
+        </div>
+      </div>
+      <div class="project-card noclick" style="grid-row: 1">
+        <div class="project-title">Image Processor</div>
+        <div class="project-thumb">
+          <img
+            class="project-thumb"
+            src="images/Image_Processor.png"
+            alt="image processor"
+          />
+        </div>
+        <div class="project-info">
+          <p>
+            Takes in various .tga files and combines / manipulates them. Made in
+            C++
           </p>
         </div>
       </div>
       <div class="project-card" style="grid-row: 1">
-        <div class="project-title">Chess</div>
+        <div class="project-title">
+          <img
+            src="images/github.png"
+            alt="github"
+            style="height: 16px; width: 16px"
+          />
+          Discover Delays
+        </div>
         <div class="project-thumb">
-          <a href="https://github.com/cbloodsworth/Chess" target="_blank">
-            <img class="project-thumb" src="images/chess.png" alt="chess" />
+          <a
+            href="https://github.com/cbloodsworth/DiscoverDelays"
+            target="_blank"
+          >
+            <img
+              class="project-thumb"
+              src="images/DiscoverDelays.png"
+              alt="flight data viewing client"
+            />
           </a>
         </div>
         <div class="project-info">
           <p>
-            Personal project as an exercise. Made in C++ and uses SFML for
-            visuals.
-          </p>
-        </div>
-      </div>
-      <div class="project-card" style="grid-row: 1">
-        <div class="project-title">Chess</div>
-        <div class="project-thumb">
-          <a href="https://github.com/cbloodsworth/Chess" target="_blank">
-            <img class="project-thumb" src="images/chess.png" alt="chess" />
-          </a>
-        </div>
-        <div class="project-info">
-          <p>
-            Personal project as an exercise. Made in C++ and uses SFML for
-            visuals.
+            Takes in a .csv with flight info, sorts the data and displays it.
+            Made in C++ and uses SFML for visuals.
           </p>
         </div>
       </div>
