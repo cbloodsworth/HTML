@@ -73,6 +73,7 @@ a:visited {
 .project-grid {
     display: grid;
     margin-inline: 10vw;
+    margin-top: -2vw;
 }
 
 .project-card {
@@ -85,8 +86,8 @@ a:visited {
     border-radius: 10px;
     font-weight: bolder;
     height: 32vh;
-    width: 12vw;
-    margin-left: 100px;
+    width: 16vw;
+    margin-left: 30px;
     margin-top: 4vh;
     transition: opacity 0.15s;
     transition: shadow 0.15s;
@@ -95,6 +96,8 @@ a:visited {
 
     font-size: large;
     vertical-align: top;
+    text-align: center;
+
     top: 0;
     transition: top 0.5s cubic-bezier(0.23, 1, 0.32, 1), 
                 height 0.5s cubic-bezier(0.23, 1, 0.32, 1);
@@ -126,15 +129,16 @@ a:visited {
     width: 12vw;
     object-fit: cover;
     vertical-align: top;
-    margin-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
     border-radius: 10px;
    
 }
 
 .project-info {
     margin-top: -0.7vh;
-    font-size: 1.2vh;
-    line-height: 20px; 
+    font-size: 1.4vh;
+    line-height: 10px; 
     font-weight: bolder;
 }
 
