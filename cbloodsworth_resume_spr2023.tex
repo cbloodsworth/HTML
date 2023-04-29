@@ -1,0 +1,210 @@
+%-------------------------
+% Resume in Latex
+% Authors : Chris Bloodsworth, Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Christopher Bloodsworth} \\ \vspace{1pt}
+    \small 941-445-3628 $|$ \href{christopherbloodsworth@gmail.com}{\underline{christopherbloodsworth@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/chris-bloodsworth/}{\underline{linkedin.com/in/chris-bloodsworth}} $|$
+    \href{https://github.com/cbloodsworth}{\underline{github.com/cbloodsworth}} \\
+    \small {Personal Website:} \href{https://cbloodsworth.github.io}{\underline{https://cbloodsworth.github.io}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Florida}{Gainesville, FL}
+      {Bachelor of Science in Computer Science}{January 2019 -- May 2024}
+      \resumeItemListStart
+        \resumeItem{Majoring in Computer Science and Engineering with a minor in Mathematics. GPA: 3.66}
+        \resumeItem{Member of the engineering honor society Tau Beta Pi.}
+      \resumeItemListEnd  
+    \resumeSubheading
+      {State College of Florida}{Sarasota, FL}
+      {Associate's in Liberal Arts and Sciences}{August 2018 -- December 2020}
+      \resumeItemListStart
+        \resumeItem{Member of Gator Engineering @ SCF, taking both UF and SCF courses before transferring to UF proper.}
+        \resumeItem{Graduated Magna Cum Laude and as the designated recipient of “Outstanding Student in Mathematics.”}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience and Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Technical Lead}{September 2022 -- Current}
+      {Open-Source Club}{University of Florida}
+      \resumeItemListStart
+        \resumeItem{Manages twice-weekly discussions and working sessions for various open-source projects.}
+        \resumeItem{In Spring 2023, led OSC-API, a subgroup of Open-Source Club dedicated to the development of small-scale APIs.}
+        \resumeItem{In Fall 2022, led the development for AL-Bot 2.0, a discord bot written in Typescript using the Discord.js API.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Manuela}{March 2023}
+      {RoboTech 2023}{Georgia Institute of Technology}
+      \resumeItemListStart
+        \resumeItem{AI chat buddy written in Python. Uses OpenAI’s DaVinci GPT-3 model, Google Text-to-Speech and OpenCV’s face detection API to detect the user’s current mood and provide meaningful, human conversation.}
+        \resumeItem{In a four-person hackathon group, programmed the mood-detection portion and the main driver.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Swamp Investigator}{January 2023}
+      {SwampHacks IX}{University of Florida}
+      \resumeItemListStart
+        \resumeItem{Procedurally generated exploration game made in Python using the PyGame framework.}
+        \resumeItem{Developed world generation using Perlin noise algorithms to create a realistic swamp to explore.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {File Systems}{December 2022}
+      {COP4600: Operating Systems}{University of Florida}
+      \resumeItemListStart
+        \resumeItem{Using C++ in a virtual Ubuntu environment, created a program that could read and display the contents of WAD files. Integrated this with the FUSE API (filesystem in userspace) to create a fully navigable file system.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {PLC Language Interpreter}{April 2023}
+      {COP4020: Programming Language Concepts}{University of Florida}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented an interpreter for a made-up language to Java code.}
+        \resumeItem{Included parsing, AST generation and type-checking.}
+        \resumeItem{Written in Java and makes use of a number of popular object-oriented design patterns such as the Visitor and the Abstract Factory.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {"ProtestPlots" Scrum Master \& Python Developer}{September 2022}
+      {CEN3031: Intro to Software Engineering}{University of Florida}
+      \resumeItemListStart
+        \resumeItem{Developed a Python script using Selenium and BeautifulSoup to gather and store data necessary to the web-app.}
+        \resumeItem{Held stand-ups multiple times a week to discuss and resolve impediments that the team may face, estimated effort-hours of tasks, and facilitated sprints with Jira.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Java, Python, C, JavaScript (TypeScript)} \\
+     \textbf{Developer Tools}{: Linux, CLI, Git, Vim, SonarCloud, Jira, Kubernetes} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
