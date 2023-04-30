@@ -1,17 +1,20 @@
+:root {
+    --bg-dark: rgb(46, 46, 46);
+}
 
 body {
-    background-color:rgb(46, 46, 46);
+    background-color: var(--bg-dark);
     font-family: Consolas;
     position: relative;
 }
 
 a:link { 
-    color:rgb(46, 46, 46);
+    color: var(--bg-dark);
     text-decoration: none; 
 }
 
 a:visited {
-    color:rgb(46, 46, 46);
+    color: var(--bg-dark)
 }
 
 
@@ -144,6 +147,13 @@ a:visited {
 }
 
 .title {
+    font-size: 4vh;
+    color:antiquewhite;
+    text-align: center;
+    position: relative;
+}
+
+.title-move {
     font-size: 4vh;
     color:antiquewhite;
     text-align: center;
