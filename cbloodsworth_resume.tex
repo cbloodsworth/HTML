@@ -36,6 +36,7 @@
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
+\def\code#1{\texttt{#1}}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
@@ -120,17 +121,17 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Florida}{Gainesville, FL}
-      {Bachelor of Science in Computer Science}{January 2019 -- May 2024}
+      {Bachelor of Science in Computer Science, Minor in Mathematics}{January 2019 -- May 2024}
       \resumeItemListStart
-        \resumeItem{Majoring in Computer Science and Engineering with a minor in Mathematics. GPA: 3.73}
+        \resumeItem{GPA: 3.78}
         \resumeItem{Member of the engineering honor society Tau Beta Pi.}
       \resumeItemListEnd  
     \resumeSubheading
       {State College of Florida}{Sarasota, FL}
       {Associate's in Liberal Arts and Sciences}{August 2018 -- December 2020}
       \resumeItemListStart
-        \resumeItem{Member of Gator Engineering @ SCF, taking both UF and SCF courses before transferring to UF proper.}
-        \resumeItem{Graduated Magna Cum Laude and as the designated recipient of “Outstanding Student in Mathematics.”}
+        \resumeItem{GPA: 3.71}
+        \resumeItem{Designated recipient of “Outstanding Student in Mathematics.” award.}
       \resumeItemListEnd  
   \resumeSubHeadingListEnd
 
@@ -138,27 +139,35 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
+      {Software Engineer}{July 2024 -- Present}
+      {MRSL Real-Time Systems Laboratory}{Sarasota, FL}
+      \resumeItemListStart
+        \resumeItem{Maintaining and developing new features for the baseline of a widely-used signal processing framework.}
+        \resumeItem{Using Jenkins to deploy on a wide array of Linux distributions, including RHEL, Ubuntu, and Alpine.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
       {Software Engineering Intern}{May 2023 -- August 2023}
       {MRSL Real-Time Systems Laboratory}{Sarasota, FL}
       \resumeItemListStart
         \resumeItem{Worked tightly with performance-critical digital signal processing (DSP) applications in C++.}
         \resumeItem{Programmed entirely on a remote instance hosted on AWS EC2.}
-        \resumeItem{Designed a parallelized DSP algorithm to operate across pods in a Kubernetes cluster.}
+        \resumeItem{Designed a concurrently-executed DSP algorithm to operate across pods in a Kubernetes cluster.}
       \resumeItemListEnd
       
     \resumeSubheading
-      {Peer Mentor (Teaching Assistant)}{September 2023 -- Present}
+      {Peer Mentor (Teaching Assistant)}{September 2023 -- May 2024}
       {CEN3031: Intro to Software Engineering}{University of Florida}
       \resumeItemListStart
-        \resumeItem{Coordinating course materials, holding office hours and giving lectures on topics related to software engineering.}
-        \resumeItem{Using Docker to containerize and deploy a full-stack React app for students to contribute to.}
+        \resumeItem{Used Docker to containerize and deploy a full-stack React app for students to contribute to.}
+        \resumeItem{Coordinated course materials, held office hours and gave lectures on topics related to software engineering.}
       \resumeItemListEnd
       
     \resumeSubheading
       {Technical Lead}{September 2022 -- Present}
       {Open-Source Club}{University of Florida}
       \resumeItemListStart
-        \resumeItem{Manages twice-weekly discussions and working sessions for various open-source projects.}
+        \resumeItem{Managed twice-weekly discussions and working sessions for various open-source projects.}
         \resumeItem{Led a group of students dedicated to the development and usage of APIs of various complexities.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -166,6 +175,15 @@
 %-----------PROJECTS-------------
 \section{Projects}
   \resumeSubHeadingListStart
+    \resumeSubheading
+      {PearTerm}{Ongoing}
+      {Personal}{}
+      \resumeItemListStart
+        \resumeItem{Created a terminal and shell in Typescript to emulate functionality of a UNIX/sh system.}
+        \resumeItem{Following POSIX shell standards to implement parsing of the shell language.}
+        \resumeItem{Implemented shell built-ins, such as \code{ls}, \code{cd} and \code{cat}, to work with an in-memory filesystem.}
+      \resumeItemListEnd
+      
     \resumeSubheading
       {Swamp Investigator}{January 2023}
       {SwampHacks IX}{University of Florida}
@@ -175,27 +193,11 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {File Systems}{December 2022}
-      {COP4600: Operating Systems}{University of Florida}
-      \resumeItemListStart
-        \resumeItem{Using C++ in a virtual Ubuntu environment, created a program that could read and display the contents of WAD files. Integrated this with the FUSE API (filesystem in userspace) to create a fully navigable file system.}
-      \resumeItemListEnd
-
-    \resumeSubheading
       {PLC Language Compiler}{April 2023}
       {COP4020: Programming Language Concepts}{University of Florida}
       \resumeItemListStart
-        \resumeItem{Designed and implemented a compiler for a made-up language to Java code.}
-        \resumeItem{Included parsing, AST generation and type-checking.}
-        \resumeItem{Written in Java and makes use of a number of popular object-oriented design patterns such as the Visitor and the Abstract Factory.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {"ProtestPlots" Scrum Master \& Python Developer}{September 2022}
-      {CEN3031: Intro to Software Engineering}{University of Florida}
-      \resumeItemListStart
-        \resumeItem{Developed a Python script using Selenium and BeautifulSoup to gather and store data necessary to the web-app.}
-        \resumeItem{Held stand-ups multiple times a week to discuss and resolve impediments that the team may face, estimated effort-hours of tasks, and facilitated sprints with Jira.}
+        \resumeItem{Designed and implemented a compiler for a small academic language.}
+        \resumeItem{Included parsing to an AST and code generation emitting Java source code.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -206,8 +208,8 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C++, Java, Python, C, JavaScript (TypeScript)} \\
-     \textbf{Developer Tools}{: Linux, Bash, AWS (S3, EKS, EC2, Lambda), Git, Vim, SonarCloud, Docker, Kubernetes, Heroku} \\
+     \textbf{Languages}{: C++, Java, Python, C, JavaScript (TypeScript), Haskell, Rust} \\
+     \textbf{Developer Tools}{: Linux, Bash, AWS (S3, EKS, EC2, Lambda), Git, Vim, SonarQube, Docker, Kubernetes, Heroku} \\
     }}
  \end{itemize}
 
